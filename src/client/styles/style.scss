@@ -1,5 +1,47 @@
-.div1{width:100px;
+
+/* Mobile Layout */
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+@media screen and(max-width: 375px) {
+  body {
+    max-width: 375px;
+    padding: 40px;
+    
+  }
+  .image{padding-bottom: 20px; height: 50px; width: 50px;}
+}
+
+/* Tablet Layout */
+
+@media screen and(max-width: 768px) {
+  body {
+    padding: 40px;
+  }
+  .image{padding-bottom: 20px; height: 100px; width: 150px;}
+}
+
+/* Desktop Layout */
+
+@media screen and(maxs-width: 1024px) {
+  body {
+    width: 100%;
+    padding: 60px;
+  }
+}
+
+#div1house{
+  display:flex;
+  justify-content: space-between;
+}
+
+.div1{
     height: 40px;
+    width: 100px;
+    float: right;
     border-top-left-radius:40px;
     border-bottom-left-radius:40px;
     border-top-right-radius:40px;
@@ -7,29 +49,36 @@
     text-align:left;
     border-style: solid;
     border-width: medium;
-    margin-left: 50px;
   padding-left: 20px;}
 .h4{position: relative;
 margin:10px}
-.td1{padding-right: 1100px}
+.td1{
+align-items: end;
+}
 .fi{margin-top: 0px;
 padding-left: 30px}
 .note{padding-left: 40px}
-.image{padding-bottom: 20px; height: 300px; width: 400px;}
+
+.image{padding-bottom: 20px; height: 300px; }
 .mt{padding-left: 30px}
-.div2{width:150px;
+.div2{
     height: 40px;
+    width: 120px;
     border-top-left-radius:40px;
     border-bottom-left-radius:40px;
     border-top-right-radius:40px;
     border-bottom-right-radius:40px;
     text-align:center;
-     border-style: solid;
+    border-style: solid;
     border-width: medium;
-  padding-left: 20px;
-margin-top:-100px}
-.div3{width:150px;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-top:20px;
+}
+
+.div3{
     height: 40px;
+    width: 100%;
     border-top-left-radius:40px;
     border-bottom-left-radius:40px;
     border-top-right-radius:40px;
@@ -38,8 +87,9 @@ margin-top:-100px}
      border-style: solid;
     border-width: medium;
     padding-left: 20px}
-.div4{width:150px;
+.div4{
     height: 40px;
+    width: 100%;
     border-top-left-radius:40px;
     border-bottom-left-radius:40px;
     border-top-right-radius:40px;
@@ -48,10 +98,13 @@ margin-top:-100px}
      border-style: solid;
     border-width: medium;
   padding-left: 20px}
-  .td2{padding-left: 300px;}
+  
   .h1{text-align: center;}
   .divA2{background-color: grey; 
     padding-bottom: 20px; 
     padding-top: 20px;
+}
+.td2{
+  margin-left: 20px;
 }
   .divA1{background-color: pink}

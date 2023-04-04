@@ -30,7 +30,7 @@ fetch(url)
      ///set the value of the html elements to the saved data
      document.getElementById('locationImage').src = listOfTrips[0]['imageUrl']
      document.getElementById('location').innerHTML = `Your trip to ${listOfTrips[0]['travelCity'] } is on ${listOfTrips[0]['departingDate']}`
-     document.getElementById('flightNote').innerHTML = listOfTrips[0]['flightNote']
+     document.getElementById('flightNote').innerHTML = `Flight note: ${listOfTrips[0]['flightNote']}`
      document.getElementById('departureDate').innerHTML = `Departure: ${listOfTrips[0]['departingDate']}`
      document.getElementById('departingLocation').innerHTML = `My trip to : ${listOfTrips[0]['travelCity']}`
     return listOfTrips;

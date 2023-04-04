@@ -20,6 +20,7 @@ app.use(express.static('dist'))
 
 
 //app will listen on port 8081
-app.listen(8081, function(){
+let port = 8081
+app.listen(port, function(){
     console.log('App listening on port 8081')
 })

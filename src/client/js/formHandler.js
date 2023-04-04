@@ -24,7 +24,7 @@ function handleSubmit(event){
     const date = today.getDate(); 
     const month = today.getMonth() + 1;
     const year = today.getFullYear();
-    const startDate = `${year}-${month}-${date} `
+    const startDate = `${year}-${month}-${date}`
   
     fetch(url).then(res => {
         console.log(res);
@@ -45,12 +45,16 @@ function handleSubmit(event){
             const temperature = data.data[0].temp;
             const description = data.data[0].weather.description;
             document.getElementById('weatherInfo').innerHTML = `The temperature in the location is ${temperature}°C and the weather description is ${description}.`
+            console.log("done");
           })
         }).catch(error => console.error(error))
-
+return 'done';
 }
 
 
 
 
-export { handleSubmit }
+ export {
+    handleSubmit
+ }
+ 

@@ -1,75 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Planner</title>
   </head>
   <body>
     <h1>
         Travel Planner
      </h1>
-    <table>
-      <tr>
-        <td class="td1">
-          <h2>
-            My Trips
-          </h2>
-          </td>
-          <td>
-            <a href="#city">
-                <div class="div1">
-                    <h4 class="h4">+ add trip</h4>
-                     </div>
-            </a>
-           
-            </td>
-        </tr>
-    </table>
+     <div id = "div1house">
+      <h2>
+        My Trips
+      </h2>
+        <a href="#city">
+            <div class="div1">
+                <h4 class="h4">+ add trip</h4>
+                 </div>
+        </a>
+     </div>
   <div class="divA1">
 
-   <table cellspacing=20>
+   <table cellspacing=10>
       <tr>
         <td>
           <img class="image" id= 'locationImage'src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMKT4NLG3pfkLMveYGsWOfzC8M-lryPJvJFA&usqp=CAU" alt="Anime-image">
           </td>
           <td>
             <h2 class="mt">
-             <div id = 'departingLocation'>My trip to:Paris,France</div> <br>
-            <div id = 'departureDate'>Departure:02/12/2022</div>   <br>
+             <div id = 'departingLocation'>My trip to: Paris,France</div> <br>
+            <div id = 'departureDate'>Departure: 02/12/2022</div>   <br>
             </h2>
             <table>
                 <tr>
                   <td>
-                  <h3 class="fi">flight Note:</h3>
+                  <h3 class="fi", id = "flightNote">Flight Note: Traveling Note
+                 </h3>
                 </td>
                 <td>
-                  <h3 id = "flightNote"class="note">Traveling Note
-                  </h3> <br>
+                   <br>
                 </td>
               </tr>
         </table>
       </td>
     </tr>
 </table>
-<table>
-  <tr>
-    <td>
+  <div id = "div2house">
       <div class="div2" onclick="return Client.deleteTrip(event)">
       <h4 class="h4">- remove trip</h4>
         </div>
-    </td>
-    <td class="td2">
-      <h3 id = "location"> Travel info</h3>
+
+    <div class="td2">
+      <h2 id = "location"> Travel info</h2>
         <h4>
             Typical weather for then is: <br><br>
           <div id = "weatherInfo"> weather info</div> <br>
          
           </h4>
+    </div>
 
-        </td>
-      </tr>
-    </table>
-   </div>
+  </div>
      <div class="divA2">
       <h4 class="h1">
         <form action="POST" onsubmit="return Client.handleSubmit(event)">
