@@ -8,9 +8,11 @@ body {
 }
 @media screen and(max-width: 375px) {
   body {
-    max-width: 375px;
-    padding: 40px;
-    
+   width: 100%;
+   padding-left: 0;
+   padding-right: 0;
+   padding-bottom: 0;
+   padding-top: 10px;
   }
   .image{padding-bottom: 20px; height: 50px; width: 50px;}
 }
@@ -18,9 +20,7 @@ body {
 /* Tablet Layout */
 
 @media screen and(max-width: 768px) {
-  body {
-    padding: 40px;
-  }
+
   .image{padding-bottom: 20px; height: 100px; width: 150px;}
 }
 
@@ -29,7 +29,7 @@ body {
 @media screen and(maxs-width: 1024px) {
   body {
     width: 100%;
-    padding: 60px;
+    
   }
 }
 
